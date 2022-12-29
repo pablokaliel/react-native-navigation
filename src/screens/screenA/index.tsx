@@ -7,7 +7,7 @@ export default function ScreenA() {
   const navigation = useNavigation()
 
   function OpenScreen(){
-    navigation.navigate('Novo',{name:"Pablo"});
+    navigation.navigate('Novo',{name:"Pablo",age:21});
   }
   return (
     <View  style={{flex:1, backgroundColor:"#1d2834", justifyContent:'center',alignItems:"center"}} >

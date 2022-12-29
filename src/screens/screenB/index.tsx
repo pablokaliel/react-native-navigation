@@ -4,21 +4,26 @@ import { View,Text,Button,TouchableOpacity,StatusBar } from 'react-native';
 
 type ParamsProps ={
   name:string;
+  age:number;
 }
 
 
 export default function ScreenB() {
   const navigation = useNavigation();
   const route = useRoute();
-  const {name}= route.params as ParamsProps;
+  const {name,age}= route.params as ParamsProps;
 
   return (
-    <View  style={{flex:1, backgroundColor:"#082b44",alignItems:'center',justifyContent:"center"}} >
+    <View  style={{flex:1, backgroundColor:"#082b44",alignItems:'center',justifyContent:"center",}} >
       <StatusBar />
-      <Text style={{marginBottom:10,color:"#fff",fontSize:14}}>O Nome apresentado na tela Home foi:</Text>
-      <Text style={{marginBottom:15,fontSize:24, color:"#fff"}}>
-        {name}
-      </Text>
+      <View style={{alignItems:'center',width:"100%",justifyContent:"center", flexDirection:"row"}}>
+      <Text style={{color:"#fff",fontSize:14}}>O Nome apresentado na tela Home foi:</Text>
+      <Text style={{marginLeft:10,fontSize:16, color:"#00ff40"}}>{name}</Text>
+      </View>
+      <View style={{alignItems:'center',width:"100%",justifyContent:"center", flexDirection:"row"}}>
+      <Text style={{fontSize:14, color:"#fff"}}>Sua idade é:</Text>
+      <Text style={{marginLeft:10,fontSize:16, color:"#00eeff"}}>{age}</Text>
+      </View>
       <TouchableOpacity
      style={{  alignItems: 'center',
      backgroundColor: '#0a95d6ca',

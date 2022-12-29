@@ -4,6 +4,7 @@ export declare global {
     screenA: undefined;
     Novo: {
        name:string;
+       age:number;
     };
    }
   }
