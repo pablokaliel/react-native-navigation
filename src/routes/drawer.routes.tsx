@@ -20,7 +20,7 @@ export function DrawerRoutes(){
     component={ScreenA}
     />
     <Screen 
-    name="screenB"
+    name="Novo"
     options={{
       drawerLabel:"Sair",
       drawerIcon: ()=> <MaterialIcons

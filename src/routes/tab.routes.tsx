@@ -11,26 +11,38 @@ export function TabRoutes(){
     screenOptions={{
       tabBarActiveTintColor:'navy',
       tabBarInactiveTintColor:'gray',
-      headerShown:false
+      // headerShown:false
       
     }}>
     <Screen 
-    name="screenA"
+    name="Home"
     options={{
       tabBarLabel:"Home",
+      // headerShown:false,
+      headerTitleAlign:'center',
+      headerStyle:{
+        backgroundColor:'#141d27',
+      },
+      headerTintColor:"#fff",
       tabBarIcon: ({color,size}) =>(
         <MaterialIcons
         name="home"
         color={color}
         size={size}/>
       )
+      
     }}
     component={ScreenA}
     />
     <Screen 
-    name="screenB"
+    name="Novo"
     options={{
       tabBarLabel:"Novo",
+      headerTitleAlign:'center',
+      headerStyle:{
+        backgroundColor:'#062135',
+      },
+      headerTintColor:"#fff",
       tabBarIcon: ({color,size}) =>(
         <MaterialIcons
         name="add"
