@@ -15,6 +15,7 @@ export default function ScreenA() {
         Essa é a página Home, Página inicial, para ir para a página B(Novo)
         clique abaixo...
       </Text>
+
       <TouchableOpacity style={styles.Button} onPress={OpenScreen}>
         <Text style={styles.TextButton}>Ir para pagina B</Text>
       </TouchableOpacity>

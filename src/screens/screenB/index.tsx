@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   StatusBar,
   StyleSheet,
-  SafeAreaView
+  SafeAreaView,
 } from "react-native";
 
 type ParamsProps = {
@@ -22,14 +22,17 @@ export default function ScreenB() {
   return (
     <SafeAreaView style={styles.Container}>
       <StatusBar />
+
       <View style={styles.ViewInfo}>
         <Text style={styles.Info}>O Nome apresentado na tela Home foi:</Text>
         <Text style={styles.InfoText}>{name}</Text>
       </View>
+
       <View style={styles.ViewInfo}>
         <Text style={styles.Info}>Sua idade é:</Text>
         <Text style={styles.InfoText}>{age}</Text>
       </View>
+
       <TouchableOpacity
         style={styles.Button}
         onPress={() => navigation.goBack()}

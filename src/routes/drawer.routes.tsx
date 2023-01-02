@@ -2,7 +2,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import ScreenA from "../screens/screenA";
 import ScreenB from "../screens/screenB";
 import { MaterialIcons } from "@expo/vector-icons";
-import {StackRoutes} from './stack.routes'
+import { StackRoutes } from "./stack.routes";
 
 const { Screen, Navigator } = createDrawerNavigator();
 
