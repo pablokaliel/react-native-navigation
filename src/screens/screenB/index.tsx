@@ -3,10 +3,10 @@ import React from "react";
 import {
   View,
   Text,
-  Button,
   TouchableOpacity,
   StatusBar,
   StyleSheet,
+  SafeAreaView
 } from "react-native";
 
 type ParamsProps = {
@@ -20,7 +20,7 @@ export default function ScreenB() {
   const { name, age } = route.params as ParamsProps;
 
   return (
-    <View style={styles.Container}>
+    <SafeAreaView style={styles.Container}>
       <StatusBar />
       <View style={styles.ViewInfo}>
         <Text style={styles.Info}>O Nome apresentado na tela Home foi:</Text>
@@ -36,7 +36,7 @@ export default function ScreenB() {
       >
         <Text style={styles.TextButton}>Voltar para página Home</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 

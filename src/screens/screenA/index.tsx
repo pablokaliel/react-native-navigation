@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Button, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -10,8 +10,7 @@ export default function ScreenA() {
     navigation.navigate("Novo", { name: "Pablo", age: 21 });
   }
   return (
-    <View style={styles.Container}>
-      <SafeAreaView />
+    <SafeAreaView style={styles.Container}>
       <Text style={styles.Text1}>
         Essa é a página Home, Página inicial, para ir para a página B(Novo)
         clique abaixo...
@@ -19,7 +18,7 @@ export default function ScreenA() {
       <TouchableOpacity style={styles.Button} onPress={OpenScreen}>
         <Text style={styles.TextButton}>Ir para pagina B</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 
