@@ -9,14 +9,13 @@
 <h2><strong> O que foi utilizado nessa aplicação: </h2></strong>
 
 
-<code>
-react-native
-expo
-typescript
-react-navigation
-react-native-gesture-handler
-</code>
-
+<ul>
+<li>react-native</li>
+<li>expo</li>
+<li>typescript</li>
+<li>react-navigation</li>
+<li>react-native-gesture-handler</li>
+</ul>
 <hr>
 
 
