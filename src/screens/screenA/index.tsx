@@ -1,7 +1,8 @@
 import React from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, SafeAreaView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import './styles'
+import { styles } from "./styles";
 
 export default function ScreenA() {
   const navigation = useNavigation();
@@ -23,26 +24,3 @@ export default function ScreenA() {
   );
 }
 
-const styles = StyleSheet.create({
-  Container: {
-    flex: 1,
-    backgroundColor: "#1d2834",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  Text1: {
-    color: "#fff",
-    marginBottom: 15,
-  },
-  Button: {
-    alignItems: "center",
-    backgroundColor: "#4b627a",
-    padding: 10,
-    width: 300,
-    marginTop: 16,
-    borderRadius: 16,
-  },
-  TextButton: {
-    color: "#fff",
-  },
-});

@@ -9,6 +9,7 @@ import {
   SafeAreaView,
 } from "react-native";
 
+
 type ParamsProps = {
   name: string;
   age: number;
